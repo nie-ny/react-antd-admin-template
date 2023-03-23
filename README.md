@@ -48,6 +48,9 @@
 │   └─index.js                # 源码入口
 ├── .env.development          # 开发环境变量配置
 ├── .env.production           # 生产环境变量配置
+├── .eslintignore             # 取消检测文件配置
+├── .eslintrc.js              # eslint配置
+├── .prettierrc               # 代码格式化 prettier配置
 ├── config-overrides.js       # 对cra的webpack自定义配置
 └── package.json              # package.json
 ```
