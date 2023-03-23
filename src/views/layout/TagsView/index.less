@@ -1,0 +1,75 @@
+.tagsView-container {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #d8dce5;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
+  background: #fff;
+
+  .tags-scrollbar {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .tags-scrollbar::-webkit-scrollbar {
+    width: 5px; /* 纵向滚动条 宽度 */
+    height: 5px; /* 横向滚动条 高度 */
+  }
+  .tags-scrollbar::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .tags-scrollbar::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: transparent;
+  }
+
+  .tags-wrap {
+    padding: 0;
+    margin: 0;
+
+    & > li {
+      display: inline-block;
+      cursor: pointer;
+
+      &:first-of-type {
+        margin-left: 15px;
+      }
+      &:last-of-type {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .contextmenu {
+    margin: 0;
+    background: #fff;
+    z-index: 3000;
+    position: absolute;
+    list-style-type: none;
+    padding: 5px 0;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+    li {
+      margin: 0;
+      padding: 0px 16px;
+      height: 30px;
+      cursor: pointer;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
+
+// .scrollbar-container {
+//   overflow-y: hidden !important;
+// }
+// .scrollbar-track-vertical {
+//   visibility: hidden !important;
+// }

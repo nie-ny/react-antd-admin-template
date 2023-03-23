@@ -1,0 +1,20 @@
+.sidebar-menu-container {
+  height: calc(100vh - 64px);
+
+  overflow-y: scroll;
+}
+
+.sidebar-menu-container::-webkit-scrollbar {
+  width: 5px; /* 纵向滚动条 宽度 */
+  height: 5px; /* 横向滚动条 高度 */
+}
+.sidebar-menu-container::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sidebar-menu-container::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
